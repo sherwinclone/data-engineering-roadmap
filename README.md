@@ -1,74 +1,112 @@
-# 數據工程師學習路線 Data Engineering Roadmap
+# Data Engineer Roadmap
 
-> 一份以台灣實務為導向的數據工程師養成指南，從零基礎到業界即戰力。
+A practical learning roadmap for becoming a Data Engineer.
 
-## 這份路線圖適合誰？
+This repository is designed for:
+- beginners who want a clear study path
+- analysts/software engineers transitioning into data engineering
+- working data engineers who want a structured knowledge map
 
-- 有 Python / SQL 基礎，想轉職數據工程師的人
-- 剛入行的 Junior DE，想補齊知識體系
-- 對數據工程有興趣，想了解這個領域在做什麼的人
+## What is a Data Engineer?
 
-## 路線總覽
+A Data Engineer builds and maintains data pipelines, data platforms, and data infrastructure so that analytics, reporting, machine learning, and business systems can use reliable data efficiently.
 
-```mermaid
-graph TD
-    A[00 先備知識<br/>Python · SQL · Linux · Git] --> B[01 資料庫<br/>RDBMS · NoSQL · OLAP]
-    B --> C[02 資料建模<br/>Star Schema · SCD · Normalization]
-    C --> D[03 ETL Pipeline<br/>Batch vs Streaming · ELT]
-    D --> E[05 資料倉儲<br/>BigQuery · Databricks · dbt]
-    D --> F[06 串流處理<br/>Kafka · Spark Streaming]
-    E --> G[07 排程與編排<br/>Airflow · Prefect · Dagster]
-    F --> G
-    G --> H[08 監控與品質<br/>ELK · Data Quality · Alerting]
-    A --> I[04 雲端平台<br/>GCP · AWS 常見服務]
-    I --> E
-    H --> J[09 職涯發展<br/>面試 · 履歷 · 台灣市場]
+Typical responsibilities include:
+- building ETL/ELT pipelines
+- designing data warehouse models
+- handling batch and streaming data
+- managing workflow orchestration
+- improving data quality and monitoring
+- optimizing performance and cost in cloud environments
 
-    style A fill:#4CAF50,color:#fff
-    style J fill:#FF9800,color:#fff
-```
+## Roadmap
 
-## 章節目錄
+### Stage 0: Foundations
+- Basic programming concepts
+- Command line / Linux basics
+- Git and GitHub
+- Basic database concepts
 
-| 章節 | 主題 | 難度 | 狀態 |
-|------|------|------|------|
-| [00 - 先備知識](./00-prerequisites/) | Python, SQL, Linux, Git | ⭐ | 🚧 |
-| [01 - 資料庫](./01-databases/) | RDBMS, NoSQL, OLAP | ⭐⭐ | 🚧 |
-| [02 - 資料建模](./02-data-modeling/) | Star Schema, SCD, Normalization | ⭐⭐ | 🚧 |
-| [03 - ETL Pipeline](./03-etl-pipelines/) | Batch, Streaming, ELT 模式 | ⭐⭐⭐ | 🚧 |
-| [04 - 雲端平台](./04-cloud-platforms/) | GCP, AWS 常見服務 | ⭐⭐ | 🚧 |
-| [05 - 資料倉儲](./05-data-warehousing/) | BigQuery, Databricks, dbt | ⭐⭐⭐ | 🚧 |
-| [06 - 串流處理](./06-streaming/) | Kafka, Spark Streaming | ⭐⭐⭐ | 🚧 |
-| [07 - 排程與編排](./07-orchestration/) | Airflow, Prefect, Dagster | ⭐⭐ | 🚧 |
-| [08 - 監控與品質](./08-monitoring/) | ELK, Data Quality, Alerting | ⭐⭐ | 🚧 |
-| [09 - 職涯發展](./09-career/) | 面試準備, 履歷, 台灣市場 | ⭐ | 🚧 |
+### Stage 1: Core Skills
+- SQL
+- Python
+- Data modeling
+- ETL / ELT concepts
 
-> ⭐ 入門 · ⭐⭐ 中階 · ⭐⭐⭐ 進階
+### Stage 2: Data Platform Skills
+- Data warehouse
+- Airflow
+- Spark
+- Batch processing
+- Data quality and testing
 
-## 學習建議
+### Stage 3: Advanced Skills
+- Streaming systems
+- Kafka
+- Cloud platforms
+- Monitoring and observability
+- Performance tuning
+- Security and governance
 
-### 必學（先掌握這些再往下走）
-- Python 基礎 + SQL 查詢與效能調校
-- 至少一種 RDBMS（PostgreSQL 推薦）
-- ETL 的基本概念與實作
-- Git 版本控制
+### Stage 4: Real-world Projects
+- Build a batch ETL pipeline
+- Build a data warehouse model
+- Build an Airflow workflow
+- Build a Spark job
+- Build a simple streaming pipeline
 
-### 加分（求職加分，工作中常用）
-- 雲端平台操作經驗（GCP 或 AWS）
-- Airflow 排程管理
-- Docker 容器化基礎
-- 資料建模觀念
+## Detailed Learning Path
 
-### 進階（Senior DE 的武器）
-- Spark 大規模資料處理
-- Kafka 即時串流
-- Data Quality Framework
-- 系統架構設計
+- [Overview](docs/01-overview.md)
+- [SQL](docs/02-sql.md)
+- [Python](docs/03-python.md)
+- [Linux & Git](docs/04-linux-git.md)
+- [Database Design](docs/05-database-design.md)
+- [ETL / ELT](docs/06-etl-elt.md)
+- [Data Warehouse](docs/07-data-warehouse.md)
+- [Airflow](docs/08-airflow.md)
+- [Spark](docs/09-spark.md)
+- [Streaming](docs/10-streaming.md)
+- [Cloud](docs/11-cloud.md)
+- [Data Quality](docs/12-data-quality.md)
+- [Monitoring](docs/13-monitoring.md)
+- [Projects](docs/14-projects.md)
+- [Interview Prep](docs/15-interview-prep.md)
 
-## 關於作者
+## Suggested Learning Order
 
-實務經驗來自台灣博弈與金融產業的數據工程工作，技術棧涵蓋 Databricks、GCP、ClickHouse、Django、ELK 等。
+1. SQL
+2. Python
+3. Linux + Git
+4. Database and data modeling
+5. ETL / ELT
+6. Data warehouse concepts
+7. Airflow
+8. Spark
+9. Streaming basics
+10. Cloud and production thinking
 
-## 授權
+## Portfolio Project Ideas
 
-[MIT License](./LICENSE)
+- Daily sales ETL pipeline
+- Clickstream log processing
+- Data warehouse star schema project
+- Airflow scheduling demo
+- Spark aggregation pipeline
+- Kafka streaming consumer demo
+
+## Who this repo is for
+
+This roadmap is especially useful for:
+- aspiring data engineers
+- data analysts moving into engineering
+- backend engineers entering data platform work
+- self-taught learners building a portfolio
+
+## Contributing
+
+Feel free to open issues or submit pull requests to improve the roadmap.
+
+## License
+
+MIT
